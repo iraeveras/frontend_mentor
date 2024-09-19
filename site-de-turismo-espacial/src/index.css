@@ -4,6 +4,8 @@
   margin: 0;
   height: 0;
   box-sizing: border-box;
+  font-family: 'Bellefair', serif;
+  font-weight: 400;
 }
 
 html,
