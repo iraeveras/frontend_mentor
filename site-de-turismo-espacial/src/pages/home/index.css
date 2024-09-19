@@ -46,20 +46,30 @@
 }
 
 .space h6 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     height: 34px;
     text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 200;
+    letter-spacing: 2px;
 }
 
 .space h1 {
-    font-size: 5.5rem;
+    font-size: 6.5rem;
     height: 165px;
     text-transform: uppercase;
+    font-family: 'Bellefair', serif;
+    font-weight: 400;
 }
 
 .space p {
     height: 90px;
-    font-size: 18px;
+    font-size: 1.2rem;
+    word-wrap: break-word;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 200;
+    letter-spacing: 0px;
+    line-height: 30px;
 }
 
 .explore {
@@ -114,6 +124,40 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 688px;
+        height: 672px;
+    }
+
+    .wrapper-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .space {
+        margin-bottom: 60px;
+    }
+
+    .space,
+    .explore {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 512px;
+        height: 334px;
+    }
+
+    .space p {
+        text-align: center;
+    }
 }
 
 
@@ -123,5 +167,18 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+    }
+
+    .space h6 {
+        font-size: 16px;
+    }
+
+    .space h1 {
+        font-size: 80px;
+    }
+
+    .space p {
+        font-size: 15px;
+        width: 327px;
     }
 }
