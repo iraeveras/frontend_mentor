@@ -33,10 +33,10 @@ const Topbar = () => {
 
                 <nav className="navigation">
                     <ul className="nav-list">
-                        <li className="active nav-link"><a href="/">00 Home</a></li>
-                        <li className="nav-link"><a href="/destination">01 Destination</a></li>
-                        <li className="nav-link"><a href="http://">02 Crew</a></li>
-                        <li className="nav-link"><a href="http://">Technology</a></li>
+                        <li className="active nav-link"><a href="/"><span>00</span> Home</a></li>
+                        <li className="nav-link"><a href="/destination"><span>01</span> Destination</a></li>
+                        <li className="nav-link"><a href="http://"><span>02</span> Crew</a></li>
+                        <li className="nav-link"><a href="http://"><span>03</span> Technology</a></li>
                     </ul>
                 </nav>
             </div>
@@ -50,10 +50,10 @@ const Topbar = () => {
                 </div>
                 <ul className="nav-list">
                     <div className="box-links">
-                        <li className="nav-link"><a href="/">00 Home</a></li>
-                        <li className="nav-link"><a href="/destination">01 Destination</a></li>
-                        <li className="nav-link"><a href="http://">02 Crew</a></li>
-                        <li className="nav-link"><a href="http://">03 Technology</a></li>
+                        <li className="active nav-link"><a href="/"><span>00</span> Home</a></li>
+                        <li className="nav-link"><a href="/destination"><span>01</span> Destination</a></li>
+                        <li className="nav-link"><a href="http://"><span>02</span> Crew</a></li>
+                        <li className="nav-link"><a href="http://"><span>03</span> Technology</a></li>
                     </div>
                 </ul>
             </nav>

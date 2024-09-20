@@ -80,17 +80,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 5px;
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
     line-height: normal;
     letter-spacing: 1px;
-    font-weight: 500;
     transition: all .3s ease;
+    font-weight: 100;
+    font-size: 16px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.navigation .nav-list .nav-link a span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-weight: 400;
 }
 
 .navigation .nav-list .nav-link:hover {
     border-bottom: 2px solid #fff;
+    transition: all .8s ease-in-out;
 }
 
 .navigation .nav-list .nav-link.active {
@@ -115,7 +127,7 @@
     backdrop-filter: blur(80px);
     -webkit-backdrop-filter: blur(80px);
     z-index: 999;
-    transition: all .3s ease;
+    transition: all .8s ease;
 }
 
 .navigation-mobile .container-btn-close {
@@ -179,11 +191,12 @@
     align-items: center;
     width: 100%;
     padding: 15px;
-
+    border-right: 2px solid transparent;
 }
 
 .navigation-mobile .nav-list .box-links .nav-link:hover {
     border-right: 2px solid #fff;
+    transition: all .8s ease-in-out;
 }
 
 .navigation-mobile .nav-list .box-links .nav-link a {
@@ -194,13 +207,32 @@
     color: #fff;
     line-height: normal;
     letter-spacing: 1px;
-    font-weight: 500;
-    transition: all .3s ease;
+    font-weight: 100;
+    font-size: 16px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.navigation-mobile .nav-list .box-links .nav-link a span {
+    height: 100%;
+    font-weight: 400;
 }
 
 .close-navigation-mobile {
-    display: none;
-    transition: all .3s ease;
+    position: fixed;
+    right: -260px;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 254px;
+    display: grid;
+    flex-direction: column;
+    align-items: end;
+    background: rgba(208, 214, 249, .1);
+    backdrop-filter: blur(80px);
+    -webkit-backdrop-filter: blur(80px);
+    transition: all .8s ease;
+    opacity: .05;
+    z-index: 999;
 }
 
 @media screen and (max-width: 1770px) {
@@ -302,8 +334,8 @@
 
     .link-logo {
         margin-left: 20px;
-        width: 48px;
-        height: 100%;
+        width: 40px;
+        height: 40px;
     }
 
     .container-btn-hamburger {
@@ -314,8 +346,8 @@
         border: none;
         outline: none;
         margin-right: 20px;
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         background: transparent;
         cursor: pointer;
     }
