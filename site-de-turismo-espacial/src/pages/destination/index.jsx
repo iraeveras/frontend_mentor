@@ -1,8 +1,9 @@
+import "./index.css"
 const Destination = () => {
     return (
-        <>
-            Destination
-        </>
+        <div className="destination">
+
+        </div>
     )
 }
 
