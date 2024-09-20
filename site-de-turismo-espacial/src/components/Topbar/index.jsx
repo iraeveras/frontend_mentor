@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import icons from "../../constants/icons.js"
 import "./index.css";
 
@@ -33,10 +34,10 @@ const Topbar = () => {
 
                 <nav className="navigation">
                     <ul className="nav-list">
-                        <li className="active nav-link"><a href="/"><span>00</span> Home</a></li>
-                        <li className="nav-link"><a href="/destination"><span>01</span> Destination</a></li>
-                        <li className="nav-link"><a href="http://"><span>02</span> Crew</a></li>
-                        <li className="nav-link"><a href="http://"><span>03</span> Technology</a></li>
+                        <li className="nav-link"><Link to="/"><span>00</span> Home</Link></li>
+                        <li className="nav-link"><Link to="/destination"><span>01</span> Destination</Link></li>
+                        <li className="nav-link"><Link to="/crew"><span>02</span> Crew</Link></li>
+                        <li className="nav-link"><Link to="/technology"><span>03</span> Technology</Link></li>
                     </ul>
                 </nav>
             </div>
@@ -50,10 +51,10 @@ const Topbar = () => {
                 </div>
                 <ul className="nav-list">
                     <div className="box-links">
-                        <li className="active nav-link"><a href="/"><span>00</span> Home</a></li>
-                        <li className="nav-link"><a href="/destination"><span>01</span> Destination</a></li>
-                        <li className="nav-link"><a href="http://"><span>02</span> Crew</a></li>
-                        <li className="nav-link"><a href="http://"><span>03</span> Technology</a></li>
+                        <li className="nav-link"><Link to="/" onClick={handleCloseMenuMobile}><span>00</span> Home</Link></li>
+                        <li className="nav-link"><Link to="/destination" onClick={handleCloseMenuMobile}><span>01</span> Destination</Link></li>
+                        <li className="nav-link"><Link to="/crew" onClick={handleCloseMenuMobile}><span>02</span> Crew</Link></li>
+                        <li className="nav-link"><Link to="/technology" onClick={handleCloseMenuMobile}><span>03</span> Technology</Link></li>
                     </div>
                 </ul>
             </nav>
