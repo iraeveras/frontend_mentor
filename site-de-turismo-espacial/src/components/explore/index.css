@@ -1,0 +1,72 @@
+.explore {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    height: 272px;
+    padding-right: 20px;
+    transition: all 0.80s ease;
+}
+
+.explore-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 272px;
+    height: 100%;
+    transition: all 0.80s ease;
+}
+
+.explore-button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 272px;
+    height: 272px;
+    border-radius: 50%;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 32px;
+    background-color: #fff;
+    transition: all 0.80s ease;
+}
+
+.explore-button a::before {
+    content: "";
+    position: absolute;
+    opacity: -1;
+    width: 450px;
+    height: 450px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.80s ease;
+}
+
+.explore-button a:hover::before {
+    opacity: .7;
+}
+
+@media screen and (max-width: 768px) {
+    .explore {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 512px;
+        height: 334px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .explore-button a {
+        width: 144px;
+        height: 144px;
+        font-size: 18px;
+    }
+
+    .explore-button a::before {
+        width: 250px;
+        height: 250px;
+    }
+}
