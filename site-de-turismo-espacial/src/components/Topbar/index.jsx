@@ -7,8 +7,15 @@ import "./index.css";
 
 const Topbar = () => {
     const [openMenuMobile, setOpenMenuMobile] = useState(false)
+    const [islinkActive, setIsLinkActive] = useState(false)
     const handleOpeMenuMobile = () => {
         setOpenMenuMobile(true)
+    }
+
+    const handleLinkActive = (e) => {
+        
+            setIsLinkActive(true)
+        
     }
 
     const handleCloseMenuMobile = () => {
