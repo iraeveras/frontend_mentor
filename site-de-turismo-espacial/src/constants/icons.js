@@ -1,5 +1,7 @@
 import logo from "../assets/shared/logo.svg";
 import iconMenuHamburguer from "../assets/shared/icon-hamburger.svg";
 import iconMenuClose from "../assets/shared/icon-close.svg";
+import imgMoonPng from "../assets/destination/image-moon.png";
+import imgMoonWebg from "../assets/destination/image-moon.webp";
 
-export default { logo, iconMenuHamburguer, iconMenuClose }
+export default { logo, iconMenuHamburguer, iconMenuClose, imgMoonPng, imgMoonWebg }
