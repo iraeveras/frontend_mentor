@@ -18,5 +18,22 @@ body,
   -webkit-transition: all .3s ease;
   -ms-transition: all .3s ease;
   transition: all .3s ease;
+  background: #000;
   overflow: hidden;
 }
+
+/* .content {
+  overflow-y: scroll;
+} */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* ::-webkit-scrollbar-track {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  display: none;
+} */
