@@ -3,24 +3,25 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     background-image: url("../../assets/home/background-home-desktop.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     transition: 0.5s ease;
-    overflow: hidden;
 }
 
-.wrapper {
+.wrapper-home {
     display: flex;
     align-items: end;
     justify-content: center;
-    max-width: 1110px;
-    height: 632px;
+    max-width: 100%;
+    height: 672px;
+    padding: 0 5px;
+    margin: 0 100px;
 }
 
-.wrapper-content {
+.wrapper-content-home {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
@@ -28,101 +29,9 @@
     height: 350px;
 }
 
-.space {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-}
-
-.space h6,
-.space h1,
-.space p {
-    display: flex;
-    align-items: center;
-    color: #fff;
-}
-
-.space h6 {
-    font-size: 2rem;
-    height: 34px;
-    text-transform: uppercase;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 200;
-    letter-spacing: 2px;
-}
-
-.space h1 {
-    font-size: 6.5rem;
-    height: 150px;
-    text-transform: uppercase;
-    font-family: 'Bellefair', serif;
-    font-weight: 400;
-}
-
-.space p {
-    height: 110px;
-    font-size: 1.2rem;
-    word-wrap: break-word;
-    font-family: 'Barlow', sans-serif;
-    font-weight: 200;
-    letter-spacing: 0px;
-    line-height: 30px;
-}
-
-.explore {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    width: 100%;
-    height: 272px;
-    transition: all 0.80s ease;
-}
-
-.explore-button {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 272px;
-    height: 100%;
-    transition: all 0.80s ease;
-}
-
-.explore-button a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 272px;
-    height: 272px;
-    border-radius: 50%;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #000;
-    font-size: 32px;
-    background-color: #fff;
-    transition: all 0.80s ease;
-}
-
-.explore-button a::before {
-    content: "";
-    position: absolute;
-    opacity: -1;
-    width: 450px;
-    height: 450px;
-    border-radius: 100%;
-    background-color: rgba(255, 255, 255, 0.2);
-    transition: all 0.80s ease;
-}
-
-.explore-button a:hover::before {
-    opacity: .7;
-}
-
 @media screen and (max-width: 1150px) {
-    .wrapper {
-        max-width: 1000px;
+    .wrapper-home {
+        max-width: 100%;
         margin: 0 20px;
     }
 }
@@ -136,47 +45,28 @@
         height: 100%;
     }
 
-    .wrapper {
+    .wrapper-home {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 688px;
-        height: 100dvh;
+        width: 100%;
+        height: calc(100% - 100px);
+        margin-top: 110px;
     }
 
-    .wrapper-content {
+    .wrapper-content-home {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 100%;
         height: 100%;
-        margin-top: 100px;
-    }
-
-    .space {
-        margin-bottom: 60px;
-        gap: 10px;
-    }
-
-    .space,
-    .explore {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 512px;
-        height: 334px;
-    }
-
-    .space p {
-        text-align: center;
     }
 }
 
-@media screen and (max-width: 510px) {
-    .space p {
-        font-size: 15px;
-        width: 450px;
+@media screen and (max-width: 540px) {
+    .wrapper-content-home {
+        margin: 0 20px ;
     }
 }
 
@@ -188,28 +78,10 @@
         background-repeat: no-repeat;
         height: 100vh;
     }
+}
 
-    .space h6 {
-        font-size: 16px;
-    }
-
-    .space h1 {
-        font-size: 80px;
-    }
-
-    .space p {
-        font-size: 15px;
-        width: 327px;
-    }
-
-    .explore-button a {
-        width: 144px;
-        height: 144px;
-        font-size: 18px;
-    }
-
-    .explore-button a::before {
-        width: 250px;
-        height: 250px;
+@media screen and (max-width: 350px) {
+    .wrapper-content-home {
+        margin: 0 10px ;
     }
 }
