@@ -19,12 +19,12 @@ body,
   -ms-transition: all .3s ease;
   transition: all .3s ease;
   background: #000;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
-/* .content {
+.content {
   overflow-y: scroll;
-} */
+}
 
 ::-webkit-scrollbar {
   display: none;

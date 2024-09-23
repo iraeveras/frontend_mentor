@@ -28,7 +28,7 @@ const Destination = () => {
                                     </ul>
                                 </nav>
                                 <div className="about">
-                                    <h1 className="about-name">MARS</h1>
+                                    <h1 className="about-name">moon</h1>
                                     <p className="about-text">
                                         See our planet as you’ve never seen it before. 
                                         A perfect relaxing trip away to help regain perspective and come 
@@ -36,6 +36,7 @@ const Destination = () => {
                                         by visiting the Luna 2 and Apollo 11 landing sites.
                                     </p>
                                 </div>
+                                <img className="division-line" src={icons.imgLine} alt="" />
                                 <footer>
                                     <div className="distance">
                                         <span className="descrition-text">avg. distance</span>

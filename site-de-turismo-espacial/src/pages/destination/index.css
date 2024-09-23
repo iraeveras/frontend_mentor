@@ -4,6 +4,7 @@
     font-family: 'Barlow Condensed', serif;
 }
 .destination {
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,10 +20,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 100%;
+    width: 100%;
+    max-width: 1110px;
     height: 672px;
-    padding: 0 5px;
-    margin: 0 100px;
+    margin: 48px 100px 0;
 }
 
 .wrapper-content-destination {
@@ -30,8 +31,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 1110px;
     align-items: center;
     height: 100%;
     max-height: 792px;
@@ -60,16 +61,21 @@
 
 .title h2 {
     color: #fff;
+    letter-spacing: 4px;
+    line-height: normal;
+    word-spacing: 1px;
 }
 
 .title span {
     color: rgba(122, 122, 122, 0.5);
     font-weight: bold;
+    letter-spacing: 4.72px;
 }
 
 .body-destination {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    place-items: center;
     gap: 40px;
     width: 100%;
     height: 100%;
@@ -80,17 +86,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    width: 100%;
-    background-color: blue;
+    height: 480px;
+    width: 480px;
 }
 
 .img-explanation div {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 539px;
-    width: 100%;
+    height: 480px;
+    width: 480px;
 }
 
 .img-explanation img {
@@ -102,9 +107,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: 468px;
     width: 100%;
-    background-color: blue;
+    max-width: 539px;
 }
 
 .content-explanation div {
@@ -115,13 +120,16 @@
     max-width: 445px;
     height: 100%;
     max-height: 468px;
+
 }
 
 .content-explanation .menu-destination {
     display: flex;
     align-items: center;
     justify-content: start;
-    height: 32px;
+    width: 100%;
+    height: 100%;
+    max-height: 32px;
 }
 
 .content-explanation .menu-destination ul {
@@ -130,7 +138,7 @@
     list-style: none;
     width: 100%;
     height: 100%;
-    gap: 10px;
+    gap: 20px;
 }
 
 .content-explanation .menu-destination ul li {
@@ -150,23 +158,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 5px;
+    padding: 10px 0px;
     cursor: pointer;
     text-transform: uppercase;
     background: transparent;
     border: none;
     outline: none;
+    margin-bottom: 5px;
     font-size: 16px;
     color: #fff;
     font-weight: 100;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    font-family: 'Barlow Condensed', sans-serif;
+    line-height: normal;
 }
 
 .about {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
-    max-height: 254px;
+
 }
 
 .about-name {
@@ -176,18 +188,33 @@
     font-weight: normal;
     color: #fff;
     font-family: 'Bellefair', serif;
+    text-transform: uppercase;
 }
 
 .about-text {
-    height: 100%;
-    max-height: 128px;
+    height: auto;
+    color: #fff;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 180%;
+    /* border-bottom: 1px solid #979797; */
+    word-spacing: 1px;
+}
+
+.division-line {
+    margin-block: 25px;
+}
+
+.division-line, .division-line img {
+    height: 1px;
+    width: 100%;
 }
 
 .content-explanation div footer {
     display: flex;
     align-items: center;
-    height: 100%;
-    max-height: 61px;
+    height: auto;
 }
 
 .content-explanation div footer .distance, 
@@ -203,21 +230,57 @@
 .content-explanation div footer .descrition-day {
     display: flex;
     color: #fff;
-    height: 100%;
+    height: auto;
+    text-transform: uppercase;
 }
 
 .content-explanation div footer .descrition-text {
-    font-family: 'Barlow Condensed' sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     font-size: 14px;
     font-weight: 200;
-    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .content-explanation div footer .descrition-number,
 .content-explanation div footer .descrition-day {
     font-family: 'Bellefair', serif;
     font-size: 28px;
-    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1067px) {
+    .division-line {
+        margin-block: 0px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .body-destination {
+        gap: 15px;
+    }
+
+    .img-explanation div,
+    .img-explanation div img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .about-name {
+        font-size: 85px;
+    }
+
+    .about-text {
+        text-align: justify;
+    }
+
+    .division-line {
+        margin-block: 0px;
+    }
+
+    .content-explanation div footer .descrition-number,
+    .content-explanation div footer .descrition-day {
+        font-size: 25px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -228,6 +291,66 @@
         background-repeat: no-repeat;
         height: 100%;
     }
+
+    .wrapper-destination,
+    .wrapper-content-destination {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .body-destination {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1px;
+        width: 688px;
+        height: 848px;
+    }
+
+    .img-explanation,
+    .content-explanation {
+        width: 100%;
+        height: 384px;
+    }
+
+    .img-explanation div,
+    .img-explanation div img {
+        width: 300px;
+        height: 300px;
+    }
+ 
+    .content-explanation div {
+        width: 100%;
+        max-width: 541px;
+        height: 361px;
+        gap: 0;
+    }
+
+    .content-explanation .menu-destination ul {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about {
+        align-items: center;
+    }
+
+    .about-name {
+        font-size: 80px;
+    }
+
+    .about-text {
+        font-size: 16px;
+        letter-spacing: 0;
+        text-align: center;
+    }
+
+    .content-explanation div footer .distance, 
+    .content-explanation div footer .time {
+        align-items: center;
+    }
+
 }
 
 @media screen and (max-width: 470px) {

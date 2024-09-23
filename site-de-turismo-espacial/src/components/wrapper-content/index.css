@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
+    max-width: 1110px;
     align-items: center;
     height: 350px;
 }
