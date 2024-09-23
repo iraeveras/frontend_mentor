@@ -1,7 +1,7 @@
-// import './index.css';
-const Wrapper = ({children, classNameValue}) => {
+import './index.css';
+const Wrapper = ({ children, classNameValue }) => {
     return (
-        <div className={classNameValue}>
+        <div className="wrapper">
             {children}
         </div>
     )

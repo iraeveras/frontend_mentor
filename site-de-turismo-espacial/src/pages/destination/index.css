@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Barlow Condensed', serif;
 }
+
 .destination {
     position: fixed;
     display: flex;
@@ -49,7 +50,8 @@
     text-transform: uppercase;
 }
 
-.title span, .title h2 {
+.title span,
+.title h2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -206,7 +208,8 @@
     margin-block: 25px;
 }
 
-.division-line, .division-line img {
+.division-line,
+.division-line img {
     height: 1px;
     width: 100%;
 }
@@ -217,7 +220,7 @@
     height: auto;
 }
 
-.content-explanation div footer .distance, 
+.content-explanation div footer .distance,
 .content-explanation div footer .time {
     display: flex;
     justify-content: center;
@@ -225,7 +228,7 @@
     width: 100%;
 }
 
-.content-explanation div footer .descrition-text, 
+.content-explanation div footer .descrition-text,
 .content-explanation div footer .descrition-number,
 .content-explanation div footer .descrition-day {
     display: flex;
@@ -319,7 +322,7 @@
         width: 300px;
         height: 300px;
     }
- 
+
     .content-explanation div {
         width: 100%;
         max-width: 541px;
@@ -346,7 +349,7 @@
         text-align: center;
     }
 
-    .content-explanation div footer .distance, 
+    .content-explanation div footer .distance,
     .content-explanation div footer .time {
         align-items: center;
     }
@@ -359,6 +362,47 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        width: 100%;
         height: 100vh;
+    }
+
+    .wrapper-destination {
+        height: calc(100vh - 96px);
+        margin: 96px 24px 0;
+    }
+
+    .wrapper-content-destination {
+        width: 327px;
+        margin: 0 24px;
+    }
+
+    .title {
+        justify-content: center;
+    }
+
+    .title span,
+    .title h2 {
+        font-size: 16px;
+
+    }
+
+    .img-explanation div,
+    .img-explanation div img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-name {
+        font-size: 56px;
+    }
+
+    .about-text {
+        font-size: 15px;
+    }
+
+    .content-explanation div footer {
+        flex-direction: column;
+        gap: 24px;
+        padding-block: 24px;
     }
 }

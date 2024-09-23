@@ -1,9 +1,4 @@
 .home {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100dvh;
     background-image: url("../../assets/home/background-home-desktop.jpg");
     background-position: center;
     background-size: cover;
@@ -11,30 +6,24 @@
     transition: 0.5s ease;
 }
 
-.wrapper-home {
+.content-home {
     display: flex;
     align-items: end;
     justify-content: center;
-    max-width: 100%;
-    height: 672px;
-    padding: 0 5px;
-    margin: 0 100px;
-}
-
-.wrapper-content-home {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     width: 100%;
-    align-items: center;
-    height: 350px;
+    max-width: 1110px;
+    height: 632px;
 }
 
-@media screen and (max-width: 1150px) {
-    .wrapper-home {
-        max-width: 100%;
-        margin: 0 20px;
-    }
+.content-home .container-space-explore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 343px;
+    gap: 30px;
 }
+
 
 @media screen and (max-width: 768px) {
     .home {
@@ -45,28 +34,17 @@
         height: 100%;
     }
 
-    .wrapper-home {
-        display: flex;
+    .content-home {
         align-items: center;
         justify-content: center;
-        width: 100%;
-        height: calc(100% - 100px);
-        margin-top: 110px;
+        height: 672px;
     }
 
-    .wrapper-content-home {
+    .content-home .container-space-explore {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
+        justify-content: space-between;
         height: 100%;
-    }
-}
-
-@media screen and (max-width: 540px) {
-    .wrapper-content-home {
-        margin: 0 20px ;
     }
 }
 
@@ -78,10 +56,16 @@
         background-repeat: no-repeat;
         height: 100vh;
     }
-}
 
-@media screen and (max-width: 350px) {
-    .wrapper-content-home {
-        margin: 0 10px ;
+    .content-home {
+        height: 100%;
+        padding: 24px 24px 0;
+    }
+
+    .content-home .container-space-explore {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* width: 327px; */
+        gap: 0;
     }
 }

@@ -1,27 +1,20 @@
 .wrapper {
     display: flex;
-    align-items: end;
+    align-items: center;
     justify-content: center;
-    min-width: 100%;
-    height: 700px;
-    padding: 0 5px;
-    margin: 0 100px;
-}
-
-@media screen and (max-width: 1150px) {
-    .wrapper {
-        max-width: 100%;
-        margin: 0 20px;
-    }
+    width: 100%;
+    height: calc(100% - 136px);
 }
 
 @media screen and (max-width: 768px) {
     .wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: calc(100% - 100px);
-        margin-top: 110px;
+        padding: 0 40px;
+        height: calc(100% - 96px);
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .wrapper {
+        padding: 0;
     }
 }

@@ -1,19 +1,26 @@
+import Container from "../../components/container";
+import Content from "../../components/content";
 import Explore from "../../components/explore";
 import Space from "../../components/space";
+import Topbar from "../../components/Topbar";
 import Wrapper from "../../components/wrapper";
-import Wrappercontent from "../../components/wrapper-content";
 import "./index.css";
 
 const Home = () => {
     return (
-        <div className="home">
-            <Wrapper classNameValue="wrapper-home">
-                <Wrappercontent classNameValue="wrapper-content-home">
-                    <Space/>
-                    <Explore />
-                </Wrappercontent>
-            </Wrapper>
-        </div>
+        <Container classNameValue="container home">
+            <Content>
+                <Topbar />
+                <Wrapper>
+                    <div className="content-home">
+                        <div className="container-space-explore">
+                            <Space />
+                            <Explore />
+                        </div>
+                    </div>
+                </Wrapper>
+            </Content>
+        </Container>
     )
 }
 

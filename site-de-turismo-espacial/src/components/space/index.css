@@ -3,8 +3,9 @@
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
+    max-width: 540px;
     height: 100%;
-    padding-left: 20px;
+    max-height: 343px;
 }
 
 .space h6,
@@ -13,65 +14,66 @@
     display: flex;
     align-items: center;
     color: #fff;
+    width: 100%;
 }
 
 .space h6 {
-    display: flex;
-    text-align: center;
     justify-content: start;
-    font-size: 2rem;
-    width: 100%;
+    font-size: 28px;
     height: 34px;
     text-transform: uppercase;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 200;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
+    word-spacing: 1px;
 }
 
 .space h1 {
-    display: flex;
-    align-items: center;
     justify-content: start;
-    width: 100%;
-    font-size: 8.5rem;
-    height: 150px;
+    height: 100%;
+    max-height: 165px;
+    font-size: 144px;
     text-transform: uppercase;
     font-family: 'Bellefair', serif;
     font-weight: 400;
+    word-spacing: 1px;
 }
 
 .space p {
-    display: flex;
-    align-items: center;
     justify-content: start;
-    height: 110px;
-    font-size: 1.1rem;
-    /* word-wrap: break-word; */
+    height: 96px;
+    font-size: 18px;
     font-family: 'Barlow', sans-serif;
     font-weight: 200;
     letter-spacing: 0px;
-    line-height: 30px;
-    width: 560px;
-    /* word-break: break-all; */
+    line-height: 180%;
+    word-spacing: 1px;
 }
 
 @media screen and (max-width: 768px) {
     .space {
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         text-align: center;
-        width: auto;
-        height: auto ;
-        margin-bottom: 60px;
-        gap: 10px;
+        width: 100%;
+        max-width: 512px;
+        height: 334px;
     }
 
     .space p,
     .space h6,
     .space h1 {
         justify-content: center;
+        width: 100%;
         height: auto;
+    }
+
+    .space p {
+        font-size: 16px;
+        word-spacing: 1px;
+        line-height: 180%;
     }
 }
 
@@ -83,11 +85,14 @@
     }
 }
 
-@media screen and (max-width: 510px) {
+
+
+@media screen and (max-width: 470px) {
     .space {
         width: 100%;
-        padding-left: 0px;
+        height: 100%;
     }
+
     .space h6 {
         font-size: 1.8rem;
     }
