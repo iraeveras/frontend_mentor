@@ -20,8 +20,17 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 343px;
+    height: 100%;
+    max-height: 343px;
     gap: 30px;
+
+}
+
+@media screen and (max-width: 1024px) {
+    .content-home .container-space-explore {
+        margin: 0 15px;
+        gap: 0px;
+    }
 }
 
 
@@ -36,7 +45,7 @@
 
     .content-home {
         align-items: center;
-        justify-content: center;
+        width: 688px;
         height: 672px;
     }
 
@@ -44,11 +53,55 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        width: 512px;
+        height: 100%;
+        max-height: 672px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .content-home {
+        align-items: center;
+        width: 100%;
+        max-width: 600px;
+        height: 775px;
+        padding: 24px;
+    }
+
+    .content-home .container-space-explore {
+        width: 100%;
         height: 100%;
     }
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 375px) {
+    .home {
+        background-image: url("../../assets/home/background-home-mobile.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+
+    .content-home {
+        width: 100%;
+        max-width: 375px;
+        height: 100%;
+        padding: 24px;
+    }
+
+    .content-home .container-space-explore {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-height: 100%;
+        gap: 0;
+    }
+}
+
+/* @media screen and (max-width: 470px) {
     .home {
         background-image: url("../../assets/home/background-home-mobile.jpg");
         background-position: center;
@@ -65,7 +118,7 @@
     .content-home .container-space-explore {
         display: grid;
         grid-template-columns: 1fr;
-        /* width: 327px; */
+        width: 327px;
         gap: 0;
     }
-}
+} */

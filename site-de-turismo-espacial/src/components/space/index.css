@@ -5,7 +5,7 @@
     width: 100%;
     max-width: 540px;
     height: 100%;
-    max-height: 343px;
+    gap: 0px;
 }
 
 .space h6,
@@ -20,6 +20,7 @@
 .space h6 {
     justify-content: start;
     font-size: 28px;
+    max-height: 100%;
     height: 34px;
     text-transform: uppercase;
     font-family: 'Barlow Condensed', sans-serif;
@@ -41,13 +42,28 @@
 
 .space p {
     justify-content: start;
-    height: 96px;
+    height: 100%;
+    max-height: 96px;
     font-size: 18px;
     font-family: 'Barlow', sans-serif;
-    font-weight: 200;
+    font-weight: 100;
     letter-spacing: 0px;
     line-height: 180%;
     word-spacing: 1px;
+    word-break: break-all;
+}
+
+@media screen and (max-width: 1024px) {
+    .space {
+        gap: 0px;
+    }
+
+    .space p {
+        word-spacing: 1px;
+        word-break: break-all;
+        height: 100%;
+        max-height: 130px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -70,6 +86,18 @@
         height: auto;
     }
 
+    .space h6 {
+        font-size: 28px;
+        letter-spacing: 4px;
+        word-spacing: 1px;
+        line-height: normal;
+    }
+
+    .space h1 {
+        font-size: 144px;
+        word-spacing: 1px;
+    }
+
     .space p {
         font-size: 16px;
         word-spacing: 1px;
@@ -77,51 +105,84 @@
     }
 }
 
-@media screen and (max-width: 580px) {
-    .space p {
-        font-size: 15px;
-        width: 100%;
-        max-width: 550px;
-    }
-}
-
-
-
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 425px) {
     .space {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
         width: 100%;
-        height: 100%;
+        max-width: 600px;
+        height: 334px;
+    }
+
+    .space p,
+    .space h6,
+    .space h1 {
+        justify-content: center;
+        width: 100%;
+        height: auto;
     }
 
     .space h6 {
-        font-size: 1.8rem;
+        font-size: 25px;
+        letter-spacing: 4px;
+        word-spacing: 1px;
+        line-height: normal;
     }
 
     .space h1 {
-        font-size: 7.5rem;
+        font-size: 120px;
+        word-spacing: 1px;
     }
 
     .space p {
-        font-size: .95rem;
-        width: 100%;
-        max-width: 320px;
+        font-size: 15px;
+        word-spacing: 1px;
+        line-height: 180%;
     }
 }
 
 @media screen and (max-width: 375px) {
     .space {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
         width: 100%;
+        max-width: 327px;
+        height: 100%;
+        max-height: 40%;
     }
 
     .space h6 {
-        font-size: .96rem;
+        width: 100%;
+        max-width: 327px;
+        /* height: 100%; */
+        max-height: 19x;
+        font-size: 16px;
+        letter-spacing: 15%;
+        word-spacing: 1px;
+        line-height: normal;
     }
 
     .space h1 {
-        font-size: 5.5rem;
+        font-size: 80px;
+        word-spacing: 1px;
+        width: 100%;
+        max-width: 327px;
+        height: 100%;
+        max-height: 92px;
     }
 
     .space p {
-        font-size: .79rem;
+        width: 100%;
+        max-width: 327px;
+        height: 100%;
+        max-height: 135px;
+        font-size: 15px;
+        word-spacing: 1px;
     }
 }
