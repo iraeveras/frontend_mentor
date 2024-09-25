@@ -1,7 +1,18 @@
+import Container from "../../components/container";
+import Content from "../../components/content";
+import Topbar from "../../components/Topbar";
+import Wrapper from "../../components/wrapper";
 import "./index.css"
 const Crew = () => {
     return (
-        <div className="crew"></div>
+        <Container classNameValue="container crew">
+            <Content>
+                <Topbar/>
+                <Wrapper>
+                    <div className="content-crew"></div>
+                </Wrapper>
+            </Content>
+        </Container>
     )
 }
 
