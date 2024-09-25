@@ -9,24 +9,20 @@
 .content-destination {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     width: 100%;
     max-width: 1110px;
     height: 632px;
-    border: 1px solid #fff;
 }
 
 .title {
     display: flex;
     align-items: center;
-    justify-content: start;
-    gap: 10px;
-    width: 100%;
+    justify-content: space-between;
+    width: 357px;
     height: 100%;
     max-height: 34px;
     text-transform: uppercase;
-    border: 1px solid red;
 }
 
 .title span,
@@ -52,8 +48,6 @@
     letter-spacing: 4px;
     line-height: normal;
     word-spacing: 1px;
-    width: 100%;
-    max-width: 315px;
 }
 
 .body-destination {
@@ -64,7 +58,6 @@
     width: 100%;
     height: 100%;
     max-height: 734px;
-    border: 1px solid green;
 }
 
 .img-explanation {
@@ -73,7 +66,6 @@
     justify-content: center;
     height: 100%;
     width: 100%;
-    border: 1px solid gold;
 }
 
 .img-explanation .box-img-explanation {
@@ -82,7 +74,6 @@
     justify-content: center;
     height: 480px;
     width: 480px;
-    border: 1px solid fuchsia;
 }
 
 .img-explanation img {
@@ -98,7 +89,6 @@
     max-width: 539px;
     height: 100%;
     max-height: 468px;
-    border: 1px solid blue;
 }
 
 .content-explanation .box-content-explanation {
@@ -111,7 +101,6 @@
     max-width: 445px;
     height: 100%;
     max-height: 468px;
-    border: 1px solid brown;
 }
 
 .content-explanation .menu-destination {
@@ -137,6 +126,8 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    padding-bottom: 8px;
+    cursor: pointer;
     border-bottom: 3px solid transparent;
 }
 
@@ -149,13 +140,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 0px;
     cursor: pointer;
     text-transform: uppercase;
     background: transparent;
     border: none;
     outline: none;
-    margin-bottom: 5px;
     font-size: 16px;
     color: #fff;
     font-weight: 100;
@@ -169,10 +158,11 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-
 }
 
 .about-name {
+    width: 100%;
+    max-width: 445px;
     height: 100%;
     max-height: 110px;
     font-size: 96px;
@@ -180,25 +170,22 @@
     color: #fff;
     font-family: 'Bellefair', serif;
     text-transform: uppercase;
+    word-spacing: 1px;
 }
 
 .about-text {
-    height: auto;
+    width: 100%;
+    max-width: 445px;
+    height: 128px;
     color: #fff;
     font-family: 'Barlow', sans-serif;
     font-weight: 100;
     font-size: 18px;
     line-height: 180%;
-    /* border-bottom: 1px solid #979797; */
     word-spacing: 1px;
 }
 
 .division-line {
-    margin-block: 25px;
-}
-
-.division-line,
-.division-line img {
     height: 1px;
     width: 100%;
 }
@@ -206,14 +193,19 @@
 .content-explanation div footer {
     display: flex;
     align-items: center;
-    height: auto;
+    gap: 24px;
+    width: 100%;
+    max-width: 445px;
+    height: 100%;
+    max-height: 61px;
 }
 
 .content-explanation div footer .distance,
 .content-explanation div footer .time {
     display: flex;
-    justify-content: center;
-    height: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
     width: 100%;
 }
 
@@ -229,50 +221,16 @@
 .content-explanation div footer .descrition-text {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 14px;
-    font-weight: 200;
+    font-weight: 100;
     letter-spacing: 2px;
+    word-spacing: 1px;
 }
 
 .content-explanation div footer .descrition-number,
 .content-explanation div footer .descrition-day {
     font-family: 'Bellefair', serif;
     font-size: 28px;
-}
-
-@media screen and (max-width: 1067px) {
-    .division-line {
-        margin-block: 0px;
-    }
-}
-
-@media screen and (max-width: 850px) {
-    .body-destination {
-        gap: 15px;
-    }
-
-    .img-explanation div,
-    .img-explanation div img {
-        width: 400px;
-        height: 400px;
-    }
-
-    .about-name {
-        font-size: 85px;
-    }
-
-    .about-text {
-        text-align: justify;
-    }
-
-    .division-line {
-        margin-block: 0px;
-    }
-
-    .content-explanation div footer .descrition-number,
-    .content-explanation div footer .descrition-day {
-        font-size: 25px;
-    }
-
+    word-spacing: 1px;
 }
 
 @media screen and (max-width: 768px) {
@@ -284,33 +242,50 @@
         height: 100%;
     }
 
+    .content-destination {
+        justify-content: space-between;
+        width: 100%;
+        max-width: 768px;
+        height: 100%;
+        max-height: calc(866px - 40px);
+        margin-top: 40px;
+    }
+
+    .title {
+        gap: 10px;
+        justify-content: start;
+        width: 100%;
+    }
+
     .body-destination {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         gap: 1px;
-        width: 688px;
-        height: 848px;
+        width: 100%;
+        max-width: 688px;
+        height: 100%;
+        max-height: 800px;
     }
 
     .img-explanation,
     .content-explanation {
         width: 100%;
+        max-width: 686px;
         height: 384px;
     }
 
-    .img-explanation div,
-    .img-explanation div img {
+    .img-explanation .box-img-explanation,
+    .img-explanation .box-img-explanation img {
         width: 300px;
         height: 300px;
     }
 
-    .content-explanation div {
+    .content-explanation .box-content-explanation {
         width: 100%;
-        max-width: 541px;
-        height: 361px;
-        gap: 0;
+        max-width: 514px;
+        height: 100%;
     }
 
     .content-explanation .menu-destination ul {
@@ -320,26 +295,131 @@
 
     .about {
         align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 16px;
+    }
+
+    .about-name,
+    .about-text,
+    .content-explanation .box-content-explanation footer {
+        width: 100%;
+        max-width: 514px;
     }
 
     .about-name {
+        text-align: center;
         font-size: 80px;
+        word-spacing: 1px;
     }
 
     .about-text {
+        height: 87px;
         font-size: 16px;
         letter-spacing: 0;
+        line-height: 180%;
+        word-spacing: 1px;
         text-align: center;
     }
 
-    .content-explanation div footer .distance,
-    .content-explanation div footer .time {
+    .content-explanation .box-content-explanation footer .distance,
+    .content-explanation .box-content-explanation footer .time {
         align-items: center;
     }
 
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 375px) {
+    .destination {
+        background-image: url("../../assets/destination/background-destination-mobile.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .content-destination {
+        justify-content: space-between;
+        /* height: 701px; */
+        margin: 24px;
+    }
+
+    .title {
+        justify-content: center;
+        height: 100%;
+        max-height: 19px;
+    }
+
+    .title span {
+        font-size: 16px;
+    }
+
+    .title p {
+        font-size: 16px;
+        letter-spacing: 15%;
+    }
+
+    .body-destination {
+        align-items: center;
+        justify-content: space-between;
+        /* gap: 32px; */
+        width: 100%;
+        max-width: 327px;
+        height: 100%;
+        gap: 0;
+        /* height: 701px; */
+    }
+
+    .img-explanation {
+        width: 100%;
+        height: 60%;
+    }
+
+    .img-explanation .box-img-explanation,
+    .img-explanation .box-img-explanation img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .content-explanation {
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+    }
+
+    .content-explanation .box-content-explanation {
+        max-height: 100%;
+    }
+
+    .about {
+        height: 100%;
+        max-height: 215px;
+        gap: 16px;
+    }
+
+    .about-name {
+        height: 100%;
+        max-height: 64px;
+        font-size: 56px;
+    }
+
+    .about-text {
+        font-size: 15px;
+        line-height: 180%;
+        height: 100%;
+        max-height: 135px;
+    }
+
+    .content-explanation .box-content-explanation footer {
+        height: 100%;
+        max-height: 146px;
+        gap: 24px;
+        flex-direction: column;
+    }
+}
+
+/* @media screen and (max-width: 470px) {
     .destination {
         background-image: url("../../assets/destination/background-destination-mobile.jpg");
         background-position: center;
@@ -378,4 +458,4 @@
         gap: 24px;
         padding-block: 24px;
     }
-}
+} */
