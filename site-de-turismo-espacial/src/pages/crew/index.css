@@ -13,7 +13,7 @@
 .content-crew {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     max-width: 1110px;
     height: 792px;
