@@ -15,7 +15,7 @@
     height: 632px;
 }
 
-.title {
+.destination-title {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,8 +25,8 @@
     text-transform: uppercase;
 }
 
-.title span,
-.title p {
+.destination-title span,
+.destination-title p {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,7 +35,7 @@
     height: 100%;
 }
 
-.title span {
+.destination-title span {
     width: 100%;
     max-width: 26px;
     color: rgba(122, 122, 122, 0.5);
@@ -43,14 +43,14 @@
     letter-spacing: 4.72px;
 }
 
-.title p {
+.destination-title p {
     color: #fff;
     letter-spacing: 4px;
     line-height: normal;
     word-spacing: 1px;
 }
 
-.body-destination {
+.destination-explanation {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
@@ -251,13 +251,13 @@
         margin-top: 40px;
     }
 
-    .title {
+    .destination-title {
         gap: 10px;
         justify-content: start;
         width: 100%;
     }
 
-    .body-destination {
+    .destination-explanation {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -345,22 +345,22 @@
         margin: 24px;
     }
 
-    .title {
+    .destination-title {
         justify-content: center;
         height: 100%;
         max-height: 19px;
     }
 
-    .title span {
+    .destination-title span {
         font-size: 16px;
     }
 
-    .title p {
+    .destination-title p {
         font-size: 16px;
         letter-spacing: 15%;
     }
 
-    .body-destination {
+    .destination-explanation {
         align-items: center;
         justify-content: space-between;
         /* gap: 32px; */
@@ -418,44 +418,3 @@
         flex-direction: column;
     }
 }
-
-/* @media screen and (max-width: 470px) {
-    .destination {
-        background-image: url("../../assets/destination/background-destination-mobile.jpg");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 100vh;
-    }
-
-    .title {
-        justify-content: center;
-    }
-
-    .title span,
-    .title h2 {
-        font-size: 16px;
-
-    }
-
-    .img-explanation div,
-    .img-explanation div img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .about-name {
-        font-size: 56px;
-    }
-
-    .about-text {
-        font-size: 15px;
-    }
-
-    .content-explanation div footer {
-        flex-direction: column;
-        gap: 24px;
-        padding-block: 24px;
-    }
-} */

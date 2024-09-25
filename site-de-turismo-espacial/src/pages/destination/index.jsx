@@ -2,9 +2,9 @@ import Container from "../../components/container";
 import Content from "../../components/content";
 import Topbar from "../../components/Topbar";
 import Wrapper from "../../components/wrapper";
-// import Wrappercontent from "../../components/wrapper-content"
 import icons from "../../constants/icons";
 import "./index.css";
+
 const Destination = () => {
     return (
         <Container classNameValue="container destination">
@@ -12,11 +12,11 @@ const Destination = () => {
                 <Topbar />
                 <Wrapper>
                     <div className="content-destination">
-                        <div className="title">
+                        <div className="destination-title">
                             <span>01</span>
                             <p>pick your destination</p>
                         </div>
-                        <section className="body-destination">
+                        <section className="destination-explanation">
                             <div className="img-explanation">
                                 <div className="box-img-explanation">
                                     <img src={icons.imgMoonWebg} alt="" />
