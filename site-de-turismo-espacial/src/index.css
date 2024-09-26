@@ -16,7 +16,7 @@ body,
   -webkit-transition: all .3s ease;
   -ms-transition: all .3s ease;
   transition: all .3s ease;
-  background: #000;
+  background: hsl(230, 35%, 7%);
 }
 
 .container {
