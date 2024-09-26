@@ -71,20 +71,42 @@
 .crew-body-explanation-left {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
+    max-width: 539px;
     height: 100%;
     border: 1px solid darkcyan;
 }
 
+.crew-body-explanation-left .profile {
+    width: 539px;
+    height: auto;
+}
+
 .crew-body-explanation-right {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 539px;
     height: 734px;
     border: 1px solid darkcyan;
 }
 
 .crew-body-explanation-right img {
-    width: 100%;
-    height: 100%;
+    width: 539.35px;
+    height: 676px;
+    border: 1px solid firebrick;
+
+}
+
+.crew-body-explanation-right::before {
+    content: "";
+    position: absolute;
+    width: 539.28px;
+    height: 676px;
+    background: transparent;
+    background: linear-gradient(0deg, hsl(230, 35%, 7%) 0%, transparent 20%);
 }
 
 @media screen and (max-width: 768px) {
