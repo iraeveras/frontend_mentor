@@ -38,7 +38,9 @@ const Crew = () => {
                                 </div>
                             </div>
                             <div className="crew-body-explanation-right">
-                                <img src={icons.imgDouglasHurleyPng} alt="" />
+                                <div className="crew-image">
+                                    <img src={icons.imgDouglasHurleyPng} alt="" />
+                                </div>
                             </div>
                         </section>
                     </div>

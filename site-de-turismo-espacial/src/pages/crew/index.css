@@ -104,13 +104,14 @@
 }
 
 .crew-body-explanation-left .profile .description-profile .role {
-    font-size: 32PX;
+    font-size: 32px;
     font-family: 'Bellefair', sans-serif;
     word-spacing: 1px;
     font-weight: 400;
     text-transform: uppercase;
-    color: rgb(208,214,249);
+    color: rgb(208, 214, 249);
 }
+
 .crew-body-explanation-left .profile .description-profile .name {
     font-size: 56px;
     font-family: 'Bellefair', sans-serif;
@@ -152,7 +153,6 @@
     align-items: center;
     gap: 40px;
     list-style: none;
-
 }
 
 .crew-body-explanation-left .pagination ul li.small-pagination {
@@ -161,6 +161,11 @@
     background-color: rgb(59, 59, 60);
     border-radius: 50px;
     cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.crew-body-explanation-left .pagination ul li.small-pagination:hover {
+    background-color: #fff;
 }
 
 .crew-body-explanation-left .pagination ul li.small-pagination.active {
@@ -177,23 +182,27 @@
     border: 1px solid darkcyan;
 }
 
-.crew-body-explanation-right img {
-    width: 100%;
-    max-width: 539px;
+.crew-body-explanation-right .crew-image {
+    width: 539.28px;
     height: 676px;
-    border: 1px solid firebrick;
-
 }
 
-.crew-body-explanation-right::before {
+.crew-body-explanation-right .crew-image::before {
     content: "";
     position: absolute;
-    width: 100%;
-    max-width: 539px;
+    width: 539.28px;
     height: 676px;
     background: transparent;
     background: linear-gradient(0deg, hsl(230, 35%, 7%) 0%, transparent 20%);
 }
+
+.crew-body-explanation-right .crew-image img {
+    width: 539.35px;
+    height: 676px;
+    border: 1px solid firebrick;
+}
+
+
 
 @media screen and (max-width: 768px) {
     .crew {
@@ -207,6 +216,147 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
+
+    .content-crew {
+        gap: 0;
+        margin-top: 0;
+        max-width: 688px;
+        height: calc(928px - 96px);
+    }
+
+    .crew-title {
+        justify-content: start;
+        gap: 24px;
+        width: 100%;
+        max-width: 688px;
+        height: 100%;
+        max-height: 24px;
+    }
+
+    .crew-title span {
+        width: 100%;
+        max-width: 21px;
+        height: 100%;
+        max-height: 24px;
+        font-size: 20px;
+        letter-spacing: 15%;
+    }
+
+    .crew-title p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 176px;
+        height: 24px;
+        font-size: 20px;
+        font-weight: 200;
+        letter-spacing: 15%;
+    }
+
+    .crew-body-explanation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        max-width: 688px;
+        max-height: 800px;
+    }
+
+    .crew-body-explanation-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 512px;
+        height: 305px;
+        /* padding: 40px 0 0 0; */
+    }
+
+    .crew-body-explanation-left .profile {
+        gap: 24px;
+        max-width: 512px;
+        height: 100%;
+    }
+
+    .crew-body-explanation-left .profile .description-profile {
+        text-align: center;
+        max-width: 512px;
+        max-height: 90px;
+        padding: 0;
+        gap: 16px;
+    }
+
+    .crew-body-explanation-left .profile .description-profile .role {
+        font-size: 24px;
+        height: 28px;
+        width: 512px;
+    }
+
+    .crew-body-explanation-left .profile .description-profile .name {
+        font-size: 40px;
+        width: 512px;
+        height: 46px;
+    }
+
+    .crew-body-explanation-left .profile .bio {
+        text-align: center;
+        font-size: 16px;
+        width: 512px;
+        height: 117px;
+        letter-spacing: 0;
+        line-height: 180%;
+        font-weight: 100;
+    }
+
+    .crew-body-explanation-left .pagination {
+        max-width: 512px;
+        height: 100%;
+        max-height: 10px;
+        padding: 0;
+    }
+
+    .crew-body-explanation-left .pagination ul {
+        justify-content: center;
+    }
+
+    .crew-body-explanation-left .pagination ul li.small-pagination {
+        width: 10px;
+        height: 10px;
+    }
+
+    .crew-body-explanation-right {
+        width: 688px;
+        height: 463px;
+    }
+
+    .crew-body-explanation-right .crew-image {
+        position: fixed;
+        width: 446.74px;
+        height: 560px;
+        border: 1px solid lawngreen;
+    }
+
+    .crew-body-explanation-right .crew-image::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        width: 446.74px;
+        height: 560px;
+        background: transparent;
+        background: linear-gradient(0deg, hsl(230, 35%, 7%) 0%, transparent 20%);
+    }
+
+    .crew-body-explanation-right .crew-image img {
+        position: absolute;
+        top: 0;
+        width: 446.80px;
+        height: 560px;
+    }
+
+
 }
 
 @media screen and (max-width: 375px) {
