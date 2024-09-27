@@ -61,8 +61,9 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
-    gap: 40px;
+    gap: 30px;
     width: 100%;
+    max-width: 1110px;
     height: 100%;
     max-height: 734px;
     border: 1px solid purple;
@@ -72,6 +73,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     max-width: 539px;
     height: 100%;
@@ -79,8 +81,90 @@
 }
 
 .crew-body-explanation-left .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
     width: 539px;
-    height: auto;
+    height: 100%;
+    max-height: 631px;
+    border: 1px solid gold;
+}
+
+.crew-body-explanation-left .profile .description-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 539px;
+    height: 100%;
+    max-height: 117px;
+    border: 1px solid darkkhaki;
+}
+
+.crew-body-explanation-left .profile .description-profile .role {
+    font-size: 32PX;
+    font-family: 'Bellefair', sans-serif;
+    word-spacing: 1px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: rgb(208,214,249);
+}
+.crew-body-explanation-left .profile .description-profile .name {
+    font-size: 56px;
+    font-family: 'Bellefair', sans-serif;
+    word-spacing: 1px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.crew-body-explanation-left .profile .bio {
+    font-size: 18px;
+    line-height: 180%;
+    word-spacing: 1px;
+    font-family: 'Barlow', serif;
+    font-weight: 200;
+    letter-spacing: 0px;
+    width: 100%;
+    max-width: 539px;
+    height: 100%;
+    max-height: 96px;
+    color: #fff;
+    border: 1px solid mediumorchid;
+}
+
+.crew-body-explanation-left .pagination {
+    width: 100%;
+    max-width: 539px;
+    height: 100%;
+    max-height: 63px;
+    padding: 0 0 48px 0;
+    border: 1px solid violet;
+}
+
+.crew-body-explanation-left .pagination ul {
+    width: 100%;
+    height: 100%;
+    max-height: 15px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+
+}
+
+.crew-body-explanation-left .pagination ul li.small-pagination {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(59, 59, 60);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.crew-body-explanation-left .pagination ul li.small-pagination.active {
+    background-color: #fff;
 }
 
 .crew-body-explanation-right {
@@ -94,7 +178,8 @@
 }
 
 .crew-body-explanation-right img {
-    width: 539.35px;
+    width: 100%;
+    max-width: 539px;
     height: 676px;
     border: 1px solid firebrick;
 
@@ -103,7 +188,8 @@
 .crew-body-explanation-right::before {
     content: "";
     position: absolute;
-    width: 539.28px;
+    width: 100%;
+    max-width: 539px;
     height: 676px;
     background: transparent;
     background: linear-gradient(0deg, hsl(230, 35%, 7%) 0%, transparent 20%);

@@ -28,12 +28,18 @@ const Crew = () => {
                                         time as commander of Crew Dragon Demo-2.
                                     </p>
                                 </div>
-                                <div className="pagination"></div>
+                                <div className="pagination">
+                                    <ul>
+                                        <li className="small-pagination active"></li>
+                                        <li className="small-pagination"></li>
+                                        <li className="small-pagination"></li>
+                                        <li className="small-pagination"></li>
+                                    </ul>
+                                </div>
                             </div>
                             <div className="crew-body-explanation-right">
                                 <img src={icons.imgDouglasHurleyPng} alt="" />
                             </div>
-
                         </section>
                     </div>
                 </Wrapper>
