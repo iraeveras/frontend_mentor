@@ -17,18 +17,16 @@
     width: 100%;
     max-width: 1110px;
     height: 792px;
-    border: 1px solid #fff;
 }
 
 .crew-title {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 24px;
     width: 273px;
     height: 100%;
     max-height: 34px;
     text-transform: uppercase;
-    border: 1px solid red;
 }
 
 .crew-title span,
@@ -36,23 +34,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 28px;
     font-family: 'Barlow Condensed', serif;
     height: 100%;
-    border: 1px solid blue;
 }
 
 .crew-title span {
-    width: 100%;
-    max-width: 30px;
-    color: rgba(122, 122, 122, 0.5);
+    width: 30px;
+    font-size: 28px;
+    color: rgba(122, 122, 122, 0.7);
     font-weight: bold;
     letter-spacing: 4.72px;
+    line-height: 0;
 }
 
 .crew-title p {
     color: #fff;
     letter-spacing: 4px;
+    font-size: 28px;
     line-height: normal;
     word-spacing: 1px;
 }
@@ -66,7 +64,6 @@
     max-width: 1110px;
     height: 100%;
     max-height: 734px;
-    border: 1px solid purple;
 }
 
 .crew-body-explanation-left {
@@ -77,7 +74,6 @@
     width: 100%;
     max-width: 539px;
     height: 100%;
-    border: 1px solid darkcyan;
 }
 
 .crew-body-explanation-left .profile {
@@ -89,7 +85,6 @@
     width: 539px;
     height: 100%;
     max-height: 631px;
-    border: 1px solid gold;
 }
 
 .crew-body-explanation-left .profile .description-profile {
@@ -100,7 +95,6 @@
     max-width: 539px;
     height: 100%;
     max-height: 117px;
-    border: 1px solid darkkhaki;
 }
 
 .crew-body-explanation-left .profile .description-profile .role {
@@ -133,7 +127,6 @@
     height: 100%;
     max-height: 96px;
     color: #fff;
-    border: 1px solid mediumorchid;
 }
 
 .crew-body-explanation-left .pagination {
@@ -142,7 +135,6 @@
     height: 100%;
     max-height: 63px;
     padding: 0 0 48px 0;
-    border: 1px solid violet;
 }
 
 .crew-body-explanation-left .pagination ul {
@@ -179,15 +171,15 @@
     justify-content: center;
     width: 539px;
     height: 734px;
-    border: 1px solid darkcyan;
 }
 
 .crew-body-explanation-right .crew-image {
+    position: absolute;
     width: 539.28px;
     height: 676px;
 }
 
-.crew-body-explanation-right .crew-image::before {
+.crew-body-explanation-right .crew-image::after {
     content: "";
     position: absolute;
     width: 539.28px;
@@ -197,12 +189,10 @@
 }
 
 .crew-body-explanation-right .crew-image img {
+    position: absolute;
     width: 539.35px;
-    height: 676px;
-    border: 1px solid firebrick;
+    height:676px;
 }
-
-
 
 @media screen and (max-width: 768px) {
     .crew {
@@ -218,15 +208,15 @@
     }
 
     .content-crew {
-        gap: 0;
-        margin-top: 0;
+        padding: 40px 0 0 0;
         max-width: 688px;
-        height: calc(928px - 96px);
+        height: 100%;
+        overflow: hidden;
     }
 
     .crew-title {
         justify-content: start;
-        gap: 24px;
+        gap: 0px;
         width: 100%;
         max-width: 688px;
         height: 100%;
@@ -234,10 +224,8 @@
     }
 
     .crew-title span {
-        width: 100%;
-        max-width: 21px;
-        height: 100%;
-        max-height: 24px;
+        width: 35px;
+        height: 24px;
         font-size: 20px;
         letter-spacing: 15%;
     }
@@ -252,6 +240,7 @@
         font-size: 20px;
         font-weight: 200;
         letter-spacing: 15%;
+        border: 1px solid #fff;
     }
 
     .crew-body-explanation {
@@ -318,6 +307,7 @@
     }
 
     .crew-body-explanation-left .pagination ul {
+        gap: 16px;
         justify-content: center;
     }
 
@@ -327,18 +317,21 @@
     }
 
     .crew-body-explanation-right {
+        position: relative;
         width: 688px;
         height: 463px;
     }
 
     .crew-body-explanation-right .crew-image {
-        position: fixed;
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
         width: 446.74px;
         height: 560px;
-        border: 1px solid lawngreen;
     }
 
-    .crew-body-explanation-right .crew-image::before {
+    .crew-body-explanation-right .crew-image::after {
         content: "";
         position: absolute;
         top: 0;
@@ -352,11 +345,10 @@
     .crew-body-explanation-right .crew-image img {
         position: absolute;
         top: 0;
-        width: 446.80px;
-        height: 560px;
+        margin: 0 auto;
+        width: 350px;
+        height: 500px;
     }
-
-
 }
 
 @media screen and (max-width: 375px) {
@@ -370,5 +362,107 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+    }
+
+    .content-crew {
+        gap: 24px;
+        margin: 24px 24px 0;
+        max-width: 375px;
+        height: 792px;
+        padding-top: 0;
+    }
+
+    .crew-title {
+        justify-content: center;
+        max-width: 327px;
+        max-height: 19px;
+    }
+
+    .crew-title span {
+        max-width: 17px;
+        max-height: 19px;
+        font-size: 16px;
+        letter-spacing: 15%;
+    }
+
+    .crew-title p {
+        max-width: 151px;
+        height: 19px;
+        font-size: 16px;
+    }
+
+    .crew-body-explanation {
+        gap: 32px;
+        max-width: 327px;
+        max-height: calc(100% - 19px);
+    }
+
+    .crew-body-explanation-left {
+        width: 100%;
+        max-width: 327px;
+        height: 319px;
+    }
+
+    .crew-body-explanation-left .profile {
+        max-width: 327px;
+        height: 245px;
+    }
+
+    .crew-body-explanation-left .profile .description-profile {
+        text-align: center;
+        max-width: 327px;
+        max-height: 57px;
+        padding: 0;
+        gap: 8px;
+    }
+
+    .crew-body-explanation-left .profile .description-profile .role {
+        font-size: 18px;
+        height: 21px;
+        width: 327px;
+    }
+
+    .crew-body-explanation-left .profile .description-profile .name {
+        width: 327px;
+        height: 28px;
+        font-size: 24px;
+    }
+
+    .crew-body-explanation-left .profile .bio {
+        width: 327px;
+        height: 164px;
+        font-size: 15px;
+    }
+
+    .crew-body-explanation-left .pagination {
+        max-width: 327px;
+        max-height: 10px;
+    }
+
+    .crew-body-explanation-right {
+        position: relative;
+        width: 327px;
+        height: 473px;
+    }
+
+    .crew-body-explanation-right .crew-image {
+        width: 271.24px;
+        height: 420px;
+    }
+
+    .crew-body-explanation-right .crew-image::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        width: 271.27px;
+        height: 420px;
+        background: transparent;
+        background: linear-gradient(0deg, hsl(230, 35%, 7%) 0%, transparent 10%);
+    }
+
+    .crew-body-explanation-right .crew-image img {
+        width: 271.27px;
+        height: 420px;
     }
 }
