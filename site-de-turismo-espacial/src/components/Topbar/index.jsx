@@ -1,26 +1,27 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import icons from "../../constants/icons.js"
 import "./index.css";
 
 
 
 const Topbar = () => {
-    const [openMenuMobile, setOpenMenuMobile] = useState(false)
-    const [islinkActive, setIsLinkActive] = useState(false)
-    const handleOpeMenuMobile = () => {
-        setOpenMenuMobile(true)
-    }
+    const [openMenuMobile, setOpenMenuMobile] = useState(false);
+    const [activeLink, setActiveLink] = useState("/");
+    const location = useLocation();
 
-    const handleLinkActive = (e) => {
-        
-            setIsLinkActive(true)
-        
-    }
+    const handleOpeMenuMobile = () => {
+        setOpenMenuMobile(true);
+    };
+
+    useEffect(() => {
+        setActiveLink(location.pathname);
+    }, [location]);
 
     const handleCloseMenuMobile = () => {
-        setOpenMenuMobile(false)
-    }
+        setOpenMenuMobile(false);
+    };
+
     return (
         <>
             <div className="topbar">
@@ -41,10 +42,18 @@ const Topbar = () => {
 
                 <nav className="navigation">
                     <ul className="nav-list">
-                        <li className="nav-link"><Link to="/"><span>00</span> Home</Link></li>
-                        <li className="nav-link"><Link to="/destination"><span>01</span> Destination</Link></li>
-                        <li className="nav-link"><Link to="/crew"><span>02</span> Crew</Link></li>
-                        <li className="nav-link"><Link to="/technology"><span>03</span> Technology</Link></li>
+                        <li className={`nav-link ${activeLink === "/" ? "link-active" : ""}`}>
+                            <Link to="/"><span>00</span> Home</Link>
+                        </li>
+                        <li className={`nav-link ${activeLink === "/destination" ? "link-active" : ""}`}>
+                            <Link to="/destination"><span>01</span> Destination</Link>
+                        </li>
+                        <li className={`nav-link ${activeLink === "/crew" ? "link-active" : ""}`}>
+                            <Link to="/crew"><span>02</span> Crew</Link>
+                        </li>
+                        <li className={`nav-link ${activeLink === "/technology" ? "link-active" : ""}`}>
+                            <Link to="/technology"><span>03</span> Technology</Link>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -58,10 +67,18 @@ const Topbar = () => {
                 </div>
                 <ul className="nav-list">
                     <div className="box-links">
-                        <li className="nav-link"><Link to="/" onClick={handleCloseMenuMobile}><span>00</span> Home</Link></li>
-                        <li className="nav-link"><Link to="/destination" onClick={handleCloseMenuMobile}><span>01</span> Destination</Link></li>
-                        <li className="nav-link"><Link to="/crew" onClick={handleCloseMenuMobile}><span>02</span> Crew</Link></li>
-                        <li className="nav-link"><Link to="/technology" onClick={handleCloseMenuMobile}><span>03</span> Technology</Link></li>
+                        <li className={`nav-link ${activeLink === "/" ? "link-mobile-active" : ""}`}>
+                            <Link to="/" onClick={handleCloseMenuMobile}><span>00</span> Home</Link>
+                        </li>
+                        <li className={`nav-link ${activeLink === "/destination" ? "link-mobile-active" : ""}`}>
+                            <Link to="/destination" onClick={handleCloseMenuMobile}><span>01</span> Destination</Link>
+                        </li>
+                        <li className={`nav-link ${activeLink === "/crew" ? "link-mobile-active" : ""}`}>
+                            <Link to="/crew" onClick={handleCloseMenuMobile}><span>02</span> Crew</Link>
+                        </li>
+                        <li className={`nav-link ${activeLink === "/technology" ? "link-mobile-active" : ""}`}>
+                            <Link to="/technology" onClick={handleCloseMenuMobile}><span>03</span> Technology</Link>
+                        </li>
                     </div>
                 </ul>
             </nav>

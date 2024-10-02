@@ -1,5 +1,4 @@
 .topbar {
-    /* position: fixed; */
     display: flex;
     align-items: end;
     width: 100%;
@@ -242,8 +241,8 @@
     z-index: 999;
 }
 
-.link-active {
-    border-bottom: 2px solid #fff;
+.navigation-mobile .nav-list .box-links .nav-link.link-mobile-active {
+    border-right: 4px solid #fff;
 }
 
 @media screen and (max-width: 1770px) {
