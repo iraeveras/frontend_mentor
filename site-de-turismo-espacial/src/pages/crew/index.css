@@ -23,7 +23,7 @@
     display: flex;
     align-items: center;
     gap: 24px;
-    width: 273px;
+    width: 285px;
     height: 100%;
     max-height: 34px;
     text-transform: uppercase;
@@ -48,6 +48,7 @@
 }
 
 .crew-title p {
+    max-width: 100%;
     color: #fff;
     letter-spacing: 4px;
     font-size: 28px;
@@ -240,7 +241,6 @@
         font-size: 20px;
         font-weight: 200;
         letter-spacing: 15%;
-        border: 1px solid #fff;
     }
 
     .crew-body-explanation {
