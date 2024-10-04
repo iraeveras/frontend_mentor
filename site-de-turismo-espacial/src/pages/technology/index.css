@@ -16,7 +16,6 @@
     justify-content: end;
     width: 100%;
     height: 792px;
-    border: 1px solid #fff;
 }
 
 .container-technology {
@@ -29,7 +28,6 @@
     max-width: 1275px;
     height: 100%;
     max-height: 792px;
-    border: 1px solid red;
 }
 
 .technology-title {
@@ -73,7 +71,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
-    row-gap: 32px;
+    column-gap: 32px;
     width: 100%;
     max-width: 1275px;
     height: 100%;
@@ -114,6 +112,7 @@
     background: transparent;
     font-size: 32px;
     color: #fff;
+    transition: all .5s ease;
 }
 
 .pagination-explanation-buttons .box-btn-tchnology .btn:hover {
@@ -122,22 +121,16 @@
     border: 1px solid #fff;
 }
 
-
-
-.technology-content-explanation {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 491px;
-    height: 301px;
-}
-
 .technology-content-explanation {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 24px;
+    width: 100%;
+    max-width: 491px;
+    height: 301px;
 }
+
 
 .classification {
     display: flex;
@@ -146,7 +139,6 @@
     gap: 16px;
     width: 491px;
     height: 117px;
-
 }
 
 .classification-name {
@@ -171,7 +163,7 @@
 .classification-description {
     width: 491px;
     height: 160px;
-    color: #fff;
+    color: #D0D6F9;
     font-family: 'Barlow', sans-serif;
     font-size: 18px;
     line-height: 180%;
@@ -185,23 +177,21 @@
     justify-content: center;
     width: 608px;
     height: 734px;
-    border: 1px solid green;
 }
 
 .box-technology-image {
     position: fixed;
     width: 608px;
     height: 600px;
-    border: 1px solid fuchsia;
 }
 
-.box-technology-image::after {
-    content: "";
-    position: absolute;
-    top: 0;
+.technology-image {
     width: 608px;
-    height: 683.11px;
-    border: 1px solid gold;
+    height: 600px;
+    background-image: url("../../assets/technology/image-launch-vehicle-portrait.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -216,6 +206,138 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
+
+    .content-technology {
+        width: 100%;
+        max-width: 688px;
+        height: 848px;
+    }
+
+    .container-technology {
+        width: 100%;
+        max-width: 688px;
+        height: 848px;
+    }
+
+    .technology-title {
+        gap: 24px;
+        width: 100%;
+        max-width: 688px;
+        height: 24px;
+    }
+
+    .technology-title span {
+        font-size: 20px;
+        letter-spacing: 15%;
+        width: 100%;
+        max-width: 25px;
+        height: 24px;
+    }
+
+    .technology-title p {
+        font-size: 20px;
+        letter-spacing: 15%;
+        width: 100%;
+        max-width: 190px;
+        height: 24px;
+    }
+
+    .technology-body-explanation {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 32px;
+        width: 100%;
+        max-width: 688px;
+        height: 800px;
+    }
+
+    .technology-body-explanation-right {
+        width: 100%;
+        max-width: 688px;
+        height: 421px;
+    }
+
+    .box-technology-image {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 768px;
+        height: 357px;
+    }
+
+    .technology-image {
+        position: relative;
+        width: 768px;
+        height: 100%;
+        background-image: url("../../assets/technology/image-launch-vehicle-portrait.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .technology-body-explanation-left {
+        flex-direction: column;
+        gap: 32px;
+        width: 100%;
+        max-width: 688px;
+        height: 347px;
+    }
+
+    .pagination-explanation-buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        width: 512px;
+        height: 56px;
+    }
+
+    .pagination-explanation-buttons .box-btn-tchnology {
+        width: 56px;
+        height: 56px;
+    }
+
+    .pagination-explanation-buttons .box-btn-tchnology .btn {
+        width: 56px;
+        height: 56px;
+        font-size: 24px;
+    }
+
+    .technology-content-explanation {
+        gap: 16px;
+        max-width: 512px;
+        height: 251px;
+    }
+
+    .classification {
+        gap: 16px;
+        width: 100%;
+        height: 90px;
+    }
+
+    .classification-name {
+        width: 100%;
+        height: 28px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .classification-commander {
+        width: 100%;
+        height: 46px;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .classification-description {
+        text-align: center;
+        width: 100%;
+        height: 145px;
+        font-size: 16px;
+        word-spacing: 1px;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -229,5 +351,65 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+    }
+
+    .content-technology {
+        width: 100%;
+        max-width: 327px;
+        height: 720px;
+    }
+
+    .container-technology {
+        width: 100%;
+        max-width: 327px;
+        height: 720px;
+    }
+
+    .technology-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 327px;
+        height: 19px;
+    }
+
+    .technology-title span {
+        font-size: 16px;
+        width: 100%;
+        max-width: 17px;
+        height: 19px;
+    }
+
+    .technology-title p {
+        font-size: 16px;
+        width: 100%;
+        max-width: 168px;
+        height: 19px;
+    }
+
+    .technology-body-explanation-right {
+        width: 100%;
+        max-width: 327px;
+        height: 322px;
+    }
+
+    .box-technology-image {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 373px;
+        height: 100%;
+        max-height: 293.74px;
+    }
+
+    .technology-image {
+        position: relative;
+        width: 373px;
+        height: 100%;
+        background-image: url("../../assets/technology/image-launch-vehicle-portrait.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 }

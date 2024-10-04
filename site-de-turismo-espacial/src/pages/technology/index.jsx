@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import Container from "../../components/container";
 import Content from "../../components/content";
 import Topbar from "../../components/Topbar";
@@ -5,6 +6,7 @@ import Wrapper from "../../components/wrapper";
 import icons from "../../constants/icons";
 import "./index.css"
 const Technology = () => {
+    const [] = useState();
     return (
         <Container classNameValue="container technology">
             <Content>
@@ -49,9 +51,7 @@ const Technology = () => {
                                 </div>
                                 <div className="technology-body-explanation-right">
                                     <div className="box-technology-image">
-                                        <div className="technology-image">
-                                            <img src={icons.imgLounchVehiclePortrait} alt="" />
-                                        </div>
+                                        <div className="technology-image"></div>
                                     </div>
                                 </div>
                             </section>
