@@ -3,8 +3,6 @@ import { Link, useLocation } from "react-router-dom";
 import icons from "../../constants/icons.js"
 import "./index.css";
 
-
-
 const Topbar = () => {
     const [openMenuMobile, setOpenMenuMobile] = useState(false);
     const [activeLink, setActiveLink] = useState("/");
@@ -27,9 +25,9 @@ const Topbar = () => {
             <div className="topbar">
                 <div className="container-logo">
                     <div className="content-logo">
-                        <a className="link-logo" href="/">
+                        <div className="box-logo">
                             <img src={icons.logo} alt="" />
-                        </a>
+                        </div>
                         <span className="line"></span>
                     </div>
                 </div>
