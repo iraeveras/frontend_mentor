@@ -12,10 +12,12 @@ const Home = () => {
             <Content>
                 <Topbar />
                 <Wrapper>
-                    <div className="content-home">
-                        <div className="container-space-explore">
-                            <Space />
-                            <Explore />
+                    <div className="container-home">
+                        <div className="content-home">
+                            <div className="container-space-explore">
+                                <Space />
+                                <Explore />
+                            </div>
                         </div>
                     </div>
                 </Wrapper>

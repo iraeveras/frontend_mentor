@@ -4,5 +4,5 @@
     flex-direction: column;
     width: 100%;
     max-width: 1440px;
-    height: 100vh;
+    max-height: 1024px;
   }
