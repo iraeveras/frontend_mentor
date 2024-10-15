@@ -104,6 +104,13 @@
         height: 100vh;
     }
 
+    .container-home {
+        width: 100%;
+        max-width: 375px;
+        height: 724px;
+        padding: 24px;
+    }
+
     .container-home .content-home {
         width: 100%;
         max-width: 375px;
