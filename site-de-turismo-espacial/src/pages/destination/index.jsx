@@ -13,13 +13,13 @@ const Destination = () => {
                 <Wrapper>
                     <div className="container-destination">
                         <div className="content-destination">
-                            <div className="destination-title">
+                            <div className="title-destination">
                                 <span>01</span>
                                 <p>pick your destination</p>
                             </div>
-                            <section className="destination-explanation">
-                                <div className="img-explanation">
-                                    <div className="box-img-explanation">
+                            <section className="explanation-destination">
+                                <div className="box-img-explanation">
+                                    <div className="content-img-explanation">
                                         <img src={icons.imgMoonWebg} alt="" />
                                     </div>
                                 </div>
@@ -35,12 +35,12 @@ const Destination = () => {
                                         </nav>
                                         <div className="about">
                                             <h1 className="about-name">moon</h1>
-                                            <p className="about-text">
+                                            <blockquote className="about-text">
                                                 See our planet as you’ve never seen it before.
                                                 A perfect relaxing trip away to help regain perspective and come
                                                 back refreshed. While you’re there, take in some history
                                                 by visiting the Luna 2 and Apollo 11 landing sites.
-                                            </p>
+                                            </blockquote>
                                         </div>
                                         <img className="division-line" src={icons.imgLine} alt="" />
                                         <footer>
