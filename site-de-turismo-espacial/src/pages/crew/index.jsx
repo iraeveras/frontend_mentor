@@ -10,39 +10,41 @@ const Crew = () => {
             <Content>
                 <Topbar />
                 <Wrapper>
-                    <div className="content-crew">
-                        <div className="crew-title">
-                            <span>02</span>
-                            <p>MEET YOUR CREW</p>
-                        </div>
-                        <section className="crew-body-explanation">
-                            <div className="crew-body-explanation-left">
-                                <div className="profile">
-                                    <div className="description-profile">
-                                        <p className="role">Commander</p>
-                                        <p className="name">Douglas Hurley</p>
+                    <div className="container-crew">
+                        <div className="content-crew">
+                            <div className="crew-title">
+                                <span>02</span>
+                                <p>MEET YOUR CREW</p>
+                            </div>
+                            <section className="crew-body-explanation">
+                                <div className="crew-body-explanation-left">
+                                    <div className="profile">
+                                        <div className="description-profile">
+                                            <p className="role">Commander</p>
+                                            <p className="name">Douglas Hurley</p>
+                                        </div>
+                                        <p className="bio">
+                                            Douglas Gerald Hurley is an American engineer, former Marine Corps
+                                            pilot and former NASA astronaut. He launched into space for the third
+                                            time as commander of Crew Dragon Demo-2.
+                                        </p>
                                     </div>
-                                    <p className="bio">
-                                        Douglas Gerald Hurley is an American engineer, former Marine Corps
-                                        pilot and former NASA astronaut. He launched into space for the third
-                                        time as commander of Crew Dragon Demo-2.
-                                    </p>
+                                    <div className="pagination">
+                                        <ul>
+                                            <li className="small-pagination active"></li>
+                                            <li className="small-pagination"></li>
+                                            <li className="small-pagination"></li>
+                                            <li className="small-pagination"></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div className="pagination">
-                                    <ul>
-                                        <li className="small-pagination active"></li>
-                                        <li className="small-pagination"></li>
-                                        <li className="small-pagination"></li>
-                                        <li className="small-pagination"></li>
-                                    </ul>
+                                <div className="crew-body-explanation-right">
+                                    <div className="crew-image">
+                                        <img src={icons.imgDouglasHurleyPng} alt="" />
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="crew-body-explanation-right">
-                                <div className="crew-image">
-                                    <img src={icons.imgDouglasHurleyPng} alt="" />
-                                </div>
-                            </div>
-                        </section>
+                            </section>
+                        </div>
                     </div>
                 </Wrapper>
             </Content>
