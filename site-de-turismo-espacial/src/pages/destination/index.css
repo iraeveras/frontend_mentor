@@ -6,13 +6,24 @@
     transition: 0.5s ease;
 }
 
+.container-destination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+    padding-block: 48px;
+}
+
 .content-destination {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
+    row-gap: 24px;
     width: 100%;
     max-width: 1110px;
-    height: 632px;
+    height: 792px;
 }
 
 .destination-title {
