@@ -104,6 +104,14 @@
 
 }
 
+@media screen and (max-width: 413px) {
+    .container-home {
+        width: 413px;
+        height: 100%;
+        padding: 24px;
+    }
+}
+
 @media screen and (max-width: 375px) {
     .home {
         background-image: url("../../assets/home/background-home-mobile.jpg");
@@ -129,8 +137,28 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* justify-content: space-between; */
         width: 100%;
+        min-height: 100%;
+        row-gap: 0px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .container-home {
+        width: 330px;
+        height: 100%;
+        padding: 15px;
+    }
+
+    .container-home .content-home {
+        width: 100%;
+        max-width: 330px;
+        height: 100%;
+    }
+
+    .container-home .content-home .container-space-explore {
+        width: 100%;
+        max-width: 330px;
         min-height: 100%;
         row-gap: 48px;
     }
