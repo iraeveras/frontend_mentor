@@ -12,7 +12,7 @@ const Crew = () => {
                 <Wrapper>
                     <div className="container-crew">
                         <div className="content-crew">
-                            <div className="crew-title">
+                            <div className="title-crew">
                                 <span>02</span>
                                 <p>MEET YOUR CREW</p>
                             </div>

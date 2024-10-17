@@ -30,26 +30,21 @@
     height: 100%;
 }
 
-.crew-title {
+.title-crew {
     display: flex;
     align-items: center;
     gap: 24px;
-    width: 285px;
-    height: 100%;
-    max-height: 34px;
+    width: 273px;
+    height: 34px;
     text-transform: uppercase;
 }
 
-.crew-title span,
-.crew-title p {
+.title-crew span {
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Barlow Condensed', serif;
-    height: 100%;
-}
-
-.crew-title span {
+    height: 34px;
     width: 30px;
     font-size: 28px;
     color: rgba(122, 122, 122, 0.7);
@@ -58,30 +53,35 @@
     line-height: 0;
 }
 
-.crew-title p {
+.title-crew p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Barlow Condensed', serif;
+    height: 100%;
     max-width: 100%;
     color: #fff;
     letter-spacing: 4px;
     font-size: 28px;
-    line-height: normal;
-    word-spacing: 1px;
+    font-weight: 200;
+    line-height: auto;
 }
 
 .crew-body-explanation {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
-    gap: 30px;
+    gap: 32px;
     width: 100%;
+    max-width: 1110px;
     height: 100%;
-    max-height: 734px;
 }
 
 .crew-body-explanation-left {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    column-gap: 40px;
     width: 100%;
     max-width: 539px;
     height: 100%;
@@ -92,35 +92,35 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 24px;
-    width: 539px;
-    height: 100%;
-    max-height: 631px;
+    column-gap: 24px;
+    width: 100%;
+    max-width: 539px;
+    height: 631px;
 }
 
 .crew-body-explanation-left .profile .description-profile {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 539px;
-    height: 100%;
-    max-height: 117px;
+    column-gap: 16px;
+    width: 539px;
+    height: 117px;
 }
 
 .crew-body-explanation-left .profile .description-profile .role {
+    width: 539px;
+    height: 37px;
     font-size: 32px;
     font-family: 'Bellefair', sans-serif;
-    word-spacing: 1px;
     font-weight: 400;
     text-transform: uppercase;
     color: rgb(208, 214, 249);
 }
 
 .crew-body-explanation-left .profile .description-profile .name {
+    width: 539px;
+    height: 64px;
     font-size: 56px;
     font-family: 'Bellefair', sans-serif;
-    word-spacing: 1px;
     font-weight: 400;
     color: #fff;
     text-transform: uppercase;
@@ -131,12 +131,10 @@
     line-height: 180%;
     word-spacing: 1px;
     font-family: 'Barlow', serif;
-    font-weight: 200;
+    font-weight: 100;
     letter-spacing: 0px;
-    width: 100%;
-    max-width: 539px;
-    height: 100%;
-    max-height: 96px;
+    width: 539px;
+    height: 96px;
     color: #fff;
 }
 
@@ -181,7 +179,7 @@
     align-items: center;
     justify-content: center;
     width: 539px;
-    height: 734px;
+    height: 100%;
 }
 
 .crew-body-explanation-right .crew-image {
@@ -225,7 +223,7 @@
         overflow: hidden;
     }
 
-    .crew-title {
+    .title-crew {
         justify-content: start;
         gap: 0px;
         width: 100%;
@@ -234,14 +232,14 @@
         max-height: 24px;
     }
 
-    .crew-title span {
+    .title-crew span {
         width: 35px;
         height: 24px;
         font-size: 20px;
         letter-spacing: 15%;
     }
 
-    .crew-title p {
+    .title-crew p {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -382,20 +380,20 @@
         padding-top: 0;
     }
 
-    .crew-title {
+    .title-crew {
         justify-content: center;
         max-width: 327px;
         max-height: 19px;
     }
 
-    .crew-title span {
+    .title-crew span {
         max-width: 17px;
         max-height: 19px;
         font-size: 16px;
         letter-spacing: 15%;
     }
 
-    .crew-title p {
+    .title-crew p {
         max-width: 151px;
         height: 19px;
         font-size: 16px;
