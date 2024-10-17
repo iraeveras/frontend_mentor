@@ -12,8 +12,8 @@ const Technology = () => {
             <Content>
                 <Topbar />
                 <Wrapper>
-                    <div className="content-technology">
-                        <div className="container-technology">
+                    <div className="container-technology">
+                        <div className="content-technology">
                             <div className="technology-title">
                                 <span>03</span>
                                 <p>SPACE LAUNCH 101</p>
